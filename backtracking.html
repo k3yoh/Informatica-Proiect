@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styleB.css">
+    <title>Informatica Proiect</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Informatica Proiect</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                  <a href="index.html">Acasa</a>
+            </li>
+            <li>
+                <a href="backtracking.html">Backtracking</a>
+            </li>
+             <li>
+                  <a href="greedy.html">Greedy</a>
+            </li>
+             <li>
+                  <a href="trierii.html">Trierii</a>
+            </li>
+        </ul>
+    </nav>
+    
+        <h1>Metoda Backtracking</h1>
+        <p>Este o metodă ”constructivă”, la fel ca Metoda Greedy, dar spre deosebire  de aceasta, are proprietatea  de a reveni asupar valorilor nealese.Aceasta metoda se aplică numai atunci 
+            cînd nu există o altă cale de rezolvare a problemei propuse, deoarece timpul de execuție este de ordin exponențial (crește exponențial o dată cu dimensiunea datelor de intrare ), rezolvarea problemei,
+            chiar pe  un calculator rapid, poate dura foarte mult.
+        </p>
+        <br></br>
+        <p>Metoda backtracking poate fi implementată iterativ sau recursiv. În ambele situații se se folosește o structură de deate de tip stivă. În cazul implementării iterative, stiva trebuie gestionată intern în algoritm – ceea ce poate duce la dificulăți în implementăre. În cazul implementării recursive se folosește spațiu de memorie de tip stivă – STACK alocat programului; implementarea recursivă este de regulă mai scurtă și mai ușor de înțeles. </p>
+        <h2>Tehnica Backtracking are la baza principiul:</h2>
+        <p>Daca in procesul de generare al unui vector solutie S=x1*x2....*xn pentru componenta k, atunci cand am generat deja x1, x2,...xn constatam ca valoarea xk
+            nu este bine aleasa, nu trecem la componenta k+1, ci reluam cautarea pentru alta valoare a lui k, iar daca aceasta valoare nu exista => reluam cautarea pentru
+            componenta k-1. 
+        </p>
+        
+            <img class="poza" src="./images/back.png" alt="">
+       
+
+        <h3>Probleme si soluţii:</h3>
+        <div class="wrapper">
+        <section class="columns">
+        <div class="column">
+            <h4>1.  Se citeste un numar natural n. Generati si afisati toate combinatiile de cate n cifre binare care nu au doua cifre de 1 alaturate.</h4>
+            <img src="./images/backtr1.PNG">
+        </div>
+        <div class="column">
+            <h4>2.  Se citeste un numar natural n. Sa se afiseze toate modurile in care poate fi descompus ca suma de numere naturale impare distincte.</h4>
+            <img src="./images/backtr2.PNG">
+        </div>
+        <div class="column">
+            <h4>3.  Se citeste un numar natural n si apoi n culori distincte date ca siruri de caractere. Afisati toate steagurile care se pot forma cu cate 3 culori diferite.</h4>
+            <img src="./images/backtr3.PNG">
+        </div>
+        </section>
+        </div>
+</body>
+</html>             
